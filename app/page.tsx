@@ -1,5 +1,13 @@
-import Hero from "@/components/Hero";
+import Hero from "@/components/sections/Hero";
+import History from "@/components/sections/History";
+import Values from "@/components/sections/Values";
 
 export default function Home() {
-  return <Hero />;
+  return (
+    <>
+      <Hero />
+      <History />
+      <Values />
+    </>
+  );
 }
