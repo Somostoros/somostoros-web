@@ -10,12 +10,13 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center gap-3">
           <Image
-            src="/logos/Logo1.PNG"
-            alt="Los Toros de Alicante"
-            width={60}
-            height={60}
-            priority
-            style={{ width: "60px", height: "auto" }}
+           src="/logos/logo-toros.png"
+           alt="Logo de Los Toros de Alicante"
+           width={373}
+           height={476}
+           priority
+            unoptimized
+            className="h-16 w-auto object-contain"
           />
 
           <span className="text-2xl font-bold tracking-wider text-white">
