@@ -24,3 +24,24 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+@keyframes toros-logo-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(var(--hero-logo-rise: -10px));
+  }
+}
+
+.hero-logo-float {
+  /* INTENSIDAD DEL MOVIMIENTO */
+  --hero-logo-rise: -8px;
+
+  /* VELOCIDAD DEL MOVIMIENTO */
+  --hero-logo-duration: 3.2s;
+
+  animation: toros-logo-float var(--hero-logo-duration) ease-in-out infinite;
+  will-change: transform;
+}

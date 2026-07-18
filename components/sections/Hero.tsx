@@ -93,15 +93,15 @@ export default function Hero() {
       <div className="relative z-20 mx-auto flex min-h-[calc(100svh-88px)] max-w-7xl items-center justify-center px-4 py-12 text-center sm:min-h-[calc(100svh-96px)] sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto w-full max-w-5xl">
           {/* Logo principal del Hero */}
-          <div className="mx-auto mb-7 flex h-24 w-24 items-center justify-center sm:mb-9 sm:h-32 sm:w-32 lg:h-36 lg:w-36">
+          <div className="hero-logo-float mx-auto mb-7 flex justify-center sm:mb-9">
             <Image
               src="/logos/logo-toros.png"
               alt="Logotipo de Los Toros de Alicante"
-              width={160}
-              height={160}
+              width={373}
+              height={476}
               priority
               unoptimized
-              className="h-full w-full object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.5)]"
+              className="hero-logo-float h-auto w-28 object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.55)] sm:w-36 md:w-44 lg:w-48"
             />
           </div>
 
