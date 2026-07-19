@@ -595,22 +595,6 @@ export default function History() {
                 lg:pr-4
               "
             >
-              <div className="flex items-center gap-3">
-                <span aria-hidden="true" className="h-px w-10 bg-[#128E97]" />
-                <p
-                  className="
-                    text-[0.63rem]
-                    font-black
-                    uppercase
-                    tracking-[0.28em]
-                    text-[#137E87]
-                    sm:text-xs
-                  "
-                >
-                  Acta de Constitución · Archivo 001
-                </p>
-              </div>
-
               <h2
                 className="
                   mt-5
