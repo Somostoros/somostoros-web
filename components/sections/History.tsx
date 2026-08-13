@@ -72,8 +72,6 @@ function MetalScrew({ className }: MetalScrewProps) {
       className={`
         absolute
         z-30
-        h-2.5
-        w-2.5
         rounded-full
         border
         border-white/70
@@ -92,7 +90,7 @@ function MetalScrew({ className }: MetalScrewProps) {
           left-1/2
           top-1/2
           h-px
-          w-1.5
+          w-[70%]
           -translate-x-1/2
           -translate-y-1/2
           rotate-45
@@ -106,129 +104,285 @@ function MetalScrew({ className }: MetalScrewProps) {
 
 function FoundationPlaque() {
   return (
-    <div
-      className="
-        absolute
-        bottom-[2.5%]
-        left-1/2
-        z-40
-        w-[52%]
-        min-w-[10rem]
-        max-w-[15rem]
-        -translate-x-1/2
-        sm:bottom-[3%]
-        sm:w-[42%]
-      "
-    >
+    <>
+      {/* ==================================================
+          PLACA COMPACTA: MÓVIL Y TABLET PEQUEÑA
+          Visible por debajo de 768 px
+      ================================================== */}
       <div
         className="
-          relative
-          overflow-hidden
-          rounded-[1rem]
-          border
-          border-white/30
-          bg-[#07161B]/80
-          px-4
-          py-4
-          shadow-[0_16px_36px_rgba(0,0,0,0.62)]
-          backdrop-blur-[10px]
-          sm:px-5
+          absolute
+          bottom-[2px]
+          left-1/2
+          z-40
+          w-[4.5rem]
+          -translate-x-1/2
+
+          min-[380px]:w-[5rem]
+          sm:w-[5.5rem]
+
+          md:hidden
         "
       >
         <div
-          aria-hidden="true"
           className="
-            pointer-events-none
-            absolute
-            inset-x-0
-            top-0
-            h-px
-            bg-gradient-to-r
-            from-transparent
-            via-white/80
-            to-transparent
+            relative
+            overflow-hidden
+            rounded-md
+            border
+            border-white/30
+            bg-[#07161B]/84
+            px-2
+            py-1.5
+            shadow-[0_8px_18px_rgba(0,0,0,0.6)]
+            backdrop-blur-[5px]
           "
-        />
-
-        <div
-          aria-hidden="true"
-          className="
-            pointer-events-none
-            absolute
-            -right-5
-            -top-12
-            h-28
-            w-10
-            rotate-[28deg]
-            bg-white/[0.08]
-            blur-sm
-          "
-        />
-
-        <MetalScrew className="left-2 top-2" />
-        <MetalScrew className="right-2 top-2" />
-        <MetalScrew className="bottom-2 left-2" />
-        <MetalScrew className="bottom-2 right-2" />
-
-        <div className="relative text-center">
-          <p
-            className="
-              text-[0.52rem]
-              font-bold
-              uppercase
-              tracking-[0.22em]
-              text-white/60
-              sm:text-[0.6rem]
-            "
-          >
-            Acta de Constitución
-          </p>
-
-          <p
-            className="
-              mt-1
-              text-3xl
-              font-black
-              leading-none
-              text-[#30CED8]
-              drop-shadow-[0_0_12px_rgba(48,206,216,0.35)]
-              sm:text-4xl
-            "
-          >
-            2021
-          </p>
-
+        >
+          {/* Reflejo superior */}
           <div
             aria-hidden="true"
             className="
-              mx-auto
-              my-3
+              pointer-events-none
+              absolute
+              inset-x-0
+              top-0
               h-px
-              w-4/5
               bg-gradient-to-r
               from-transparent
-              via-white/30
+              via-white/65
               to-transparent
             "
           />
 
-          <time
-            dateTime="2021-04-19"
-            className="block text-[0.68rem] font-bold text-white sm:text-xs"
-          >
-            19 de abril
-          </time>
+          {/* Tornillos pequeños */}
+          <MetalScrew className="left-1 top-1 h-1 w-1" />
+          <MetalScrew className="right-1 top-1 h-1 w-1" />
+          <MetalScrew className="bottom-1 left-1 h-1 w-1" />
+          <MetalScrew className="bottom-1 right-1 h-1 w-1" />
 
-          <p className="mt-2 text-[0.62rem] text-white/75 sm:text-[0.7rem]">
-            Guarapo Café
-          </p>
+          <div className="relative text-center">
+            <p
+              className="
+                text-[0.3rem]
+                font-bold
+                uppercase
+                leading-[1.05]
+                tracking-[0.08em]
+                text-white/65
+              "
+            >
+              <span className="block">Acta de</span>
+              <span className="block">Constitución</span>
+            </p>
 
-          <p className="mt-0.5 text-[0.56rem] text-white/55 sm:text-[0.65rem]">
-            El Campello · Alicante
-          </p>
+            <p
+              className="
+                mt-0.5
+                text-[1rem]
+                font-black
+                leading-none
+                text-[#30CED8]
+                drop-shadow-[0_0_6px_rgba(48,206,216,0.35)]
+              "
+            >
+              2021
+            </p>
+
+            <time
+              dateTime="2021-04-19"
+              className="
+                mt-0.5
+                block
+                whitespace-nowrap
+                text-[0.35rem]
+                font-semibold
+                leading-none
+                text-white/85
+              "
+            >
+              19 · 04 · 2021
+            </time>
+          </div>
         </div>
       </div>
-    </div>
+
+      {/* ==================================================
+          PLACA COMPLETA: TABLET GRANDE Y ESCRITORIO
+          Visible desde 768 px
+      ================================================== */}
+      <div
+        className="
+          absolute
+          bottom-2
+          left-1/2
+          z-40
+          hidden
+          w-[11rem]
+          -translate-x-1/2
+
+          md:block
+          lg:bottom-[3%]
+          lg:w-[14rem]
+        "
+      >
+        <div
+          className="
+            relative
+            overflow-hidden
+            rounded-xl
+            border
+            border-white/30
+            bg-[#07161B]/82
+            px-4
+            py-3
+            shadow-[0_14px_32px_rgba(0,0,0,0.62)]
+            backdrop-blur-[8px]
+
+            lg:px-5
+            lg:py-4
+          "
+        >
+          {/* Brillo superior */}
+          <div
+            aria-hidden="true"
+            className="
+              pointer-events-none
+              absolute
+              inset-x-0
+              top-0
+              h-px
+              bg-gradient-to-r
+              from-transparent
+              via-white/75
+              to-transparent
+            "
+          />
+
+          {/* Reflejo diagonal */}
+          <div
+            aria-hidden="true"
+            className="
+              pointer-events-none
+              absolute
+              -right-5
+              -top-12
+              h-28
+              w-10
+              rotate-[28deg]
+              bg-white/[0.07]
+              blur-sm
+            "
+          />
+
+          {/* Tornillos */}
+          <MetalScrew className="left-2 top-2 h-2 w-2 lg:h-2.5 lg:w-2.5" />
+          <MetalScrew className="right-2 top-2 h-2 w-2 lg:h-2.5 lg:w-2.5" />
+          <MetalScrew className="bottom-2 left-2 h-2 w-2 lg:h-2.5 lg:w-2.5" />
+          <MetalScrew className="bottom-2 right-2 h-2 w-2 lg:h-2.5 lg:w-2.5" />
+
+          <div className="relative min-w-0">
+            <p
+              className="
+                text-center
+                text-[0.5rem]
+                font-bold
+                uppercase
+                leading-none
+                tracking-[0.16em]
+                text-white/60
+
+                lg:text-[0.6rem]
+                lg:tracking-[0.2em]
+              "
+            >
+              Acta de Constitución
+            </p>
+
+            <div
+              className="
+                mt-2
+                grid
+                grid-cols-[auto_1px_minmax(0,1fr)]
+                items-center
+                gap-3
+
+                lg:gap-4
+              "
+            >
+              <p
+                className="
+                  whitespace-nowrap
+                  text-3xl
+                  font-black
+                  leading-none
+                  text-[#30CED8]
+                  drop-shadow-[0_0_8px_rgba(48,206,216,0.35)]
+
+                  lg:text-4xl
+                "
+              >
+                2021
+              </p>
+
+              <div
+                aria-hidden="true"
+                className="h-10 w-px bg-white/20 lg:h-12"
+              />
+
+              <div className="min-w-0 overflow-hidden text-left">
+                <time
+                  dateTime="2021-04-19"
+                  className="
+                    block
+                    truncate
+                    whitespace-nowrap
+                    text-[0.65rem]
+                    font-bold
+                    leading-none
+                    text-white
+
+                    lg:text-xs
+                  "
+                >
+                  19 de abril
+                </time>
+
+                <p
+                  className="
+                    mt-1
+                    truncate
+                    whitespace-nowrap
+                    text-[0.55rem]
+                    leading-none
+                    text-white/70
+
+                    lg:text-[0.68rem]
+                  "
+                >
+                  Guarapo Café
+                </p>
+
+                <p
+                  className="
+                    mt-1
+                    hidden
+                    truncate
+                    whitespace-nowrap
+                    text-[0.62rem]
+                    leading-none
+                    text-white/50
+
+                    lg:block
+                  "
+                >
+                  El Campello · Alicante
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
@@ -364,7 +518,7 @@ export default function History() {
             <motion.figure
               initial={
                 reduceMotion
-                  ? { opacity: 1, y: 0, rotate: 2 }
+                  ? { opacity: 1, y: 0, rotate: -2 }
                   : { opacity: 0, y: 65, rotate: 0 }
               }
               whileInView={{
@@ -446,6 +600,7 @@ export default function History() {
                     border-[#59452C]/35
                     bg-neutral-900
                   "
+                  
                 >
                   <Image
                     src="/images/history/fundacion.jpg"

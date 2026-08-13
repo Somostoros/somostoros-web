@@ -93,7 +93,7 @@ export default function Hero() {
       <div className="relative z-20 mx-auto flex min-h-[calc(100svh-88px)] max-w-7xl items-center justify-center px-4 py-12 text-center sm:min-h-[calc(100svh-96px)] sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto w-full max-w-5xl">
           {/* Logo principal del Hero */}
-          <div className="mx-auto mb-7 flex justify-center sm:mb-9 animate-bounce">
+          <div className="hero-logo-float mx-auto mb-7 flex justify-center sm:mb-9">
             <Image
               src="/logos/logo-toros.png"
               alt="Logotipo de Los Toros de Alicante"
@@ -132,10 +132,10 @@ export default function Hero() {
 
           {/* Descripción */}
           <div className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-white sm:text-xl lg:text-2xl">
-            <p>No importa quién seas.</p>
+            <p>Un equipo</p>
 
             <p className="mt-2 font-extrabold">
-              Donde la pasión por el softball se convierte en familia.
+              CON DENOMINACIÓN DE ORIGEN
             </p>
           </div>
 
