@@ -2,6 +2,8 @@ import Image from "next/image";
 
 type PlayerCardProps = {
   name: string;
+  number?: number;
+  position?: string;
   image: string;
 };
 
