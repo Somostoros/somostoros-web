@@ -12,6 +12,18 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@font-face {
+  font-family: "Dbacks";
+  src: url("/fonts/Dbacks.T.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.toros-font {
+  font-family: "Dbacks", sans-serif;
+}
+
 /*
 @media (prefers-color-scheme: dark) {
   :root {
@@ -20,11 +32,24 @@
   }
 }
 */
+@font-face {
+  font-family: "Dbacks";
+  src: url("/fonts/Dbacks.T.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.toros-font {
+  font-family: "Dbacks", sans-serif;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 @keyframes toros-logo-float {
   0%,
   100% {
@@ -37,10 +62,7 @@ body {
 }
 
 .hero-logo-float {
-  /* INTENSIDAD DEL MOVIMIENTO */
   --hero-logo-rise: -8px;
-
-  /* VELOCIDAD DEL MOVIMIENTO */
   --hero-logo-duration: 6.5s;
 
   animation: toros-logo-float var(--hero-logo-duration) ease-in-out infinite;

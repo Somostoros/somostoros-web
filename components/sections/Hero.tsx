@@ -3,10 +3,11 @@ import Link from "next/link";
 
 const navigation = [
   { label: "Inicio", href: "#inicio" },
-  { label: "Club", href: "#historia" },
-  { label: "Equipos", href: "#equipos" },
-  { label: "Galería", href: "#galeria" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Actualidad", href: "#actualidad" },
+  { label: "El equipo", href: "#equipo" },
+  { label: "Competición", href: "#competicion" },
+  { label: "Palmarés", href: "#palmares" },
+  { label: "Fan Zone", href: "#fan-zone" },
 ] as const;
 
 export default function Hero() {

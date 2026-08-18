@@ -606,7 +606,7 @@ export default function History() {
                     src="/images/history/fundacion.jpg"
                     alt="Fundadores de Los Toros de Alicante durante la firma del Acta de Constitución"
                     fill
-                    quality={90}
+                    quality={75}
                     sizes="(min-width: 1024px) 59vw, 100vw"
                     className="
                       object-cover
