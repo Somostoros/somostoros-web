@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 export default function Competition() {
   return (
@@ -15,7 +14,7 @@ export default function Competition() {
         className="absolute inset-0 opacity-20"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 20% 20%, rgba(53,202,216,0.25) 0, transparent 35%), radial-gradient(circle at 80% 80%, rgba(53,202,216,0.18) 0, transparent 35%)",
+            "radial-gradient(circle at 20% 20%, rgba(48, 206, 216, 0.25) 0, transparent 35%), radial-gradient(circle at 80% 80%, rgba(48, 206, 216, 0.18) 0, transparent 35%)",
         }}
       />
 
@@ -29,18 +28,18 @@ export default function Competition() {
           transition={{ duration: 0.7 }}
           className="mb-16 text-center"
         >
-          <p className="mb-4 text-sm font-black uppercase tracking-[0.35em] text-[#35cad8] sm:text-base">
+          <p className="mb-4 text-sm font-black uppercase tracking-[0.35em] text-[#30CED8] sm:text-base">
             COMPETICIÓN
           </p>
 
           <h2 className="text-4xl font-black uppercase tracking-tight sm:text-5xl lg:text-6xl">
             Los Toros están
-            <span className="block text-[#35cad8]">
+            <span className="block text-[#30CED8]">
               en juego
             </span>
           </h2>
 
-          <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#35cad8]" />
+          <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-[#30CED8]" />
         </motion.div>
 
         {/* ====================================================== */}
@@ -58,11 +57,11 @@ export default function Competition() {
             className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] p-7 backdrop-blur-sm sm:p-10"
           >
             {/* Línea decorativa */}
-            <div className="absolute left-0 top-0 h-full w-1 bg-[#35cad8]" />
+            <div className="absolute left-0 top-0 h-full w-1 bg-[#30CED8]" />
 
             <div className="mb-8 flex items-center justify-between">
               <div>
-                <p className="text-xs font-black uppercase tracking-[0.25em] text-[#35cad8]">
+                <p className="text-xs font-black uppercase tracking-[0.25em] text-[#30CED8]">
                   ÚLTIMO RESULTADO
                 </p>
 
@@ -78,8 +77,8 @@ export default function Competition() {
             <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-4">
 
               <div className="text-center">
-                <div className="mx-auto mb-3 flex h-20 w-20 items-center justify-center rounded-full border border-[#35cad8]/30 bg-black/40 p-3">
-                  <span className="text-sm font-black text-[#35cad8]">
+                <div className="mx-auto mb-3 flex h-20 w-20 items-center justify-center rounded-full border border-[#30CED8]/30 bg-black/40 p-3">
+                  <span className="text-sm font-black text-[#30CED8]">
                     TOROS
                   </span>
                 </div>
@@ -119,19 +118,18 @@ export default function Competition() {
             <div className="mt-8 border-t border-white/10 pt-6">
               <p className="text-center text-lg font-bold sm:text-xl">
                 ¡Toros, nuevo equipo
-                <span className="text-[#35cad8]">
+                <span className="text-[#30CED8]">
                   {" "}Campeón Federado de Murcia!
                 </span>
               </p>
             </div>
 
-            <Link
-              href="#resultados"
-              className="mt-8 inline-flex w-full items-center justify-center rounded-full border border-white/15 px-6 py-4 text-sm font-black uppercase tracking-wider transition hover:border-[#35cad8] hover:bg-[#35cad8] hover:text-black"
+            <div
+              aria-disabled="true"
+              className="mt-8 inline-flex w-full cursor-default items-center justify-center rounded-full border border-white/15 px-6 py-4 text-sm font-black uppercase tracking-wider text-white/50"
             >
-              Ver resultados
-              <span className="ml-3 text-lg">→</span>
-            </Link>
+              Resultados próximamente
+            </div>
           </motion.article>
 
           {/* PRÓXIMO PARTIDO */}
@@ -140,7 +138,7 @@ export default function Competition() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.25 }}
             transition={{ duration: 0.7 }}
-            className="relative overflow-hidden rounded-3xl bg-[#35cad8] p-7 text-black sm:p-10"
+            className="relative overflow-hidden rounded-3xl bg-[#30CED8] p-7 text-black sm:p-10"
           >
             {/* Decoración */}
             <div
@@ -221,13 +219,12 @@ export default function Competition() {
 
               </div>
 
-              <Link
-                href="#calendario"
-                className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-black px-6 py-4 text-sm font-black uppercase tracking-wider text-white transition hover:bg-white hover:text-black"
+              <div
+                aria-disabled="true"
+                className="mt-6 inline-flex w-full cursor-default items-center justify-center rounded-full bg-black/80 px-6 py-4 text-sm font-black uppercase tracking-wider text-white/60"
               >
-                Ver calendario
-                <span className="ml-3 text-lg">→</span>
-              </Link>
+                Calendario próximamente
+              </div>
             </div>
           </motion.article>
         </div>
@@ -247,7 +244,7 @@ export default function Competition() {
           <div className="flex flex-col gap-4 border-b border-white/10 p-7 sm:flex-row sm:items-center sm:justify-between sm:p-10">
 
             <div>
-              <p className="text-xs font-black uppercase tracking-[0.25em] text-[#35cad8]">
+              <p className="text-xs font-black uppercase tracking-[0.25em] text-[#30CED8]">
                 CLASIFICACIÓN
               </p>
 
@@ -256,13 +253,12 @@ export default function Competition() {
               </h3>
             </div>
 
-            <Link
-              href="#clasificacion"
-              className="inline-flex items-center justify-center rounded-full border border-[#35cad8] px-6 py-3 text-sm font-black uppercase tracking-wider text-[#35cad8] transition hover:bg-[#35cad8] hover:text-black"
-            >
-              Clasificación completa
-              <span className="ml-3">→</span>
-            </Link>
+            <div
+              aria-disabled="true"
+              className="inline-flex cursor-default items-center justify-center rounded-full border border-[#30CED8]/40 px-6 py-3 text-sm font-black uppercase tracking-wider text-[#30CED8]/60"
+              >
+              Clasificación próximamente
+            </div>
           </div>
 
           {/* Tabla */}
@@ -281,14 +277,14 @@ export default function Competition() {
               </div>
 
               {/* TOROS */}
-              <div className="grid grid-cols-[60px_1fr_80px_80px_80px_80px] items-center border-b border-white/5 bg-[#35cad8]/10 px-7 py-5 sm:px-10">
+              <div className="grid grid-cols-[60px_1fr_80px_80px_80px_80px] items-center border-b border-white/5 bg-[#30CED8]/10 px-7 py-5 sm:px-10">
 
-                <span className="text-xl font-black text-[#35cad8]">
+                <span className="text-xl font-black text-[#30CED8]">
                   1
                 </span>
 
                 <div className="flex items-center gap-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#35cad8] text-xs font-black text-black">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#30CED8] text-xs font-black text-black">
                     T
                   </div>
 
@@ -309,7 +305,7 @@ export default function Competition() {
                   —
                 </span>
 
-                <span className="text-center text-lg font-black text-[#35cad8]">
+                <span className="text-center text-lg font-black text-[#30CED8]">
                   —
                 </span>
               </div>
