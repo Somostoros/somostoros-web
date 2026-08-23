@@ -9,7 +9,6 @@ import TeamFormation from "@/components/sections/TeamFormation";
 import FanZone from "@/components/sections/FanZone";
 import Sponsors from "@/components/sections/Sponsors";
 import Values from "@/components/sections/Values";
-import Footer from "@/components/layout/Footer";
 
 export default function HomePage() {
   return (
@@ -31,7 +30,6 @@ export default function HomePage() {
 
       <Values />
 
-      <Footer />
     </main>
   );
 }

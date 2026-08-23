@@ -3,12 +3,12 @@
 import Image from "next/image";
 
 const navigation = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Actualidad", href: "#actualidad" },
-  { label: "El Equipo", href: "#equipo" },
-  { label: "Competición", href: "#competicion" },
-  { label: "Palmarés", href: "#palmares" },
-  { label: "Fan Zone", href: "#fan-zone" },
+  { label: "Inicio", href: "/#inicio" },
+  { label: "Actualidad", href: "/#actualidad" },
+  { label: "El Equipo", href: "/#equipo" },
+  { label: "Competición", href: "/#competicion" },
+  { label: "Palmarés", href: "/#palmares" },
+  { label: "Fan Zone", href: "/#fan-zone" },
 ];
 
 export default function Header() {
@@ -18,7 +18,7 @@ export default function Header() {
 
         {/* LOGO + NOMBRE */}
         <a
-          href="#inicio"
+          href="/#inicio"
           aria-label="Los Toros de Alicante - Inicio"
           className="flex items-center gap-3"
         >
@@ -52,7 +52,7 @@ export default function Header() {
 
         {/* BOTÓN ÚNETE */}
         <a
-          href="#invitacion"
+          href="/#invitacion"
           className="rounded-full bg-[#30CED8] px-6 py-2 font-semibold text-black transition hover:scale-105 hover:bg-white"
         >
           ÚNETE

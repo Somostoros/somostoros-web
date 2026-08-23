@@ -195,7 +195,7 @@ export default function Palmares() {
           className="mt-16 flex justify-center"
         >
           <Link
-            href="#palmares-completo"
+            href="/palmares"
             className="inline-flex min-h-14 items-center justify-center rounded-full border-2 border-[#30CED8] px-8 text-sm font-black uppercase tracking-[0.12em] text-[#30CED8] transition duration-300 hover:bg-[#30CED8] hover:text-black"
           >
             Ver palmarés completo

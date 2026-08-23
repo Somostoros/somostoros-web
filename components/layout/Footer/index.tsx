@@ -2,20 +2,20 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navigation = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Actualidad", href: "#actualidad" },
-  { label: "El Equipo", href: "#equipo" },
-  { label: "Competición", href: "#competicion" },
-  { label: "Palmarés", href: "#palmares" },
-  { label: "Fan Zone", href: "#fan-zone" },
+  { label: "Inicio", href: "/#inicio" },
+  { label: "Actualidad", href: "/#actualidad" },
+  { label: "El Equipo", href: "/#equipo" },
+  { label: "Competición", href: "/#competicion" },
+  { label: "Palmarés", href: "/#palmares" },
+  { label: "Fan Zone", href: "/#fan-zone" },
 ];
 
 const clubLinks = [
-  { label: "Nuestra historia", href: "#historia" },
-  { label: "Plantilla", href: "#equipo" },
-  { label: "Formar un equipo", href: "#formar-equipo" },
-  { label: "Patrocinadores", href: "#patrocinadores" },
-  { label: "Contacto", href: "#invitacion" },
+  { label: "Nuestra historia", href: "/#historia" },
+  { label: "Plantilla", href: "/#equipo" },
+  { label: "Formar un equipo", href: "/#formar-equipo" },
+  { label: "Patrocinadores", href: "/#patrocinadores" },
+  { label: "Contacto", href: "/#invitacion" },
 ];
 
 export default function Footer() {
@@ -26,7 +26,7 @@ export default function Footer() {
       <section className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-24">
 
-          <div className="relative overflow-hidden rounded-3xl bg-[#35cad8] px-8 py-14 text-center text-black sm:px-12 lg:px-20">
+          <div className="relative overflow-hidden rounded-3xl bg-[#30CED8] px-8 py-14 text-center text-black sm:px-12 lg:px-20">
 
             {/* Decoración */}
             <div
@@ -59,7 +59,7 @@ export default function Footer() {
               </p>
 
               <Link
-                href="#invitacion"
+                href="/#invitacion"
                 className="mt-8 inline-flex min-h-14 items-center justify-center rounded-full bg-black px-8 text-sm font-black uppercase tracking-[0.12em] text-white transition duration-300 hover:bg-white hover:text-black"
               >
                 Contacta con los Toros
@@ -82,7 +82,7 @@ export default function Footer() {
             <div className="lg:col-span-4">
 
               <Link
-                href="#inicio"
+                href="/#inicio"
                 aria-label="Volver al inicio"
                 className="inline-flex items-center gap-4"
               >
@@ -102,7 +102,7 @@ export default function Footer() {
                     TOrOS
                   </p>
 
-                  <p className="text-xs font-bold uppercase tracking-[0.35em] text-[#35cad8]">
+                  <p className="text-xs font-bold uppercase tracking-[0.35em] text-[#30CED8]">
                      de Alicante
                   </p>
                 </div>
@@ -123,7 +123,7 @@ export default function Footer() {
             {/* NAVEGACIÓN */}
             <div className="lg:col-span-3">
 
-              <h3 className="text-xs font-black uppercase tracking-[0.3em] text-[#35cad8]">
+              <h3 className="text-xs font-black uppercase tracking-[0.3em] text-[#30CED8]">
                 Navegación
               </h3>
 
@@ -144,7 +144,7 @@ export default function Footer() {
             {/* CLUB */}
             <div className="lg:col-span-3">
 
-              <h3 className="text-xs font-black uppercase tracking-[0.3em] text-[#35cad8]">
+              <h3 className="text-xs font-black uppercase tracking-[0.3em] text-[#30CED8]">
                 El club
               </h3>
 
@@ -165,7 +165,7 @@ export default function Footer() {
             {/* REDES */}
             <div className="lg:col-span-2">
 
-              <h3 className="text-xs font-black uppercase tracking-[0.3em] text-[#35cad8]">
+              <h3 className="text-xs font-black uppercase tracking-[0.3em] text-[#30CED8]">
                 Síguenos
               </h3>
 
@@ -174,7 +174,7 @@ export default function Footer() {
                 <a
                   href="#instagram"
                   aria-label="Instagram"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-xs font-black text-white transition hover:border-[#35cad8] hover:bg-[#35cad8] hover:text-black"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-xs font-black text-white transition hover:border-[#30CED8] hover:bg-[#30CED8] hover:text-black"
                 >
                   IG
                 </a>
@@ -182,7 +182,7 @@ export default function Footer() {
                 <a
                   href="#facebook"
                   aria-label="Facebook"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-xs font-black text-white transition hover:border-[#35cad8] hover:bg-[#35cad8] hover:text-black"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-xs font-black text-white transition hover:border-[#30CED8] hover:bg-[#30CED8] hover:text-black"
                 >
                   FB
                 </a>
@@ -190,7 +190,7 @@ export default function Footer() {
                 <a
                   href="#tiktok"
                   aria-label="TikTok"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-xs font-black text-white transition hover:border-[#35cad8] hover:bg-[#35cad8] hover:text-black"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-xs font-black text-white transition hover:border-[#30CED8] hover:bg-[#30CED8] hover:text-black"
                 >
                   TK
                 </a>
