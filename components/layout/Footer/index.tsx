@@ -15,7 +15,7 @@ const clubLinks = [
   { label: "Plantilla", href: "/#equipo" },
   { label: "Formar un equipo", href: "/#formar-equipo" },
   { label: "Patrocinadores", href: "/#patrocinadores" },
-  { label: "Contacto", href: "/#invitacion" },
+  { label: "Contacto", href: "/#contacto" },
 ];
 
 export default function Footer() {
@@ -59,7 +59,7 @@ export default function Footer() {
               </p>
 
               <Link
-                href="/#invitacion"
+                href="/#contacto"
                 className="mt-8 inline-flex min-h-14 items-center justify-center rounded-full bg-black px-8 text-sm font-black uppercase tracking-[0.12em] text-white transition duration-300 hover:bg-white hover:text-black"
               >
                 Contacta con los Toros

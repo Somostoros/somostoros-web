@@ -9,6 +9,7 @@ import TeamFormation from "@/components/sections/TeamFormation";
 import FanZone from "@/components/sections/FanZone";
 import Sponsors from "@/components/sections/Sponsors";
 import Values from "@/components/sections/Values";
+import Contact from "@/components/sections/Contact";
 
 export default function HomePage() {
   return (
@@ -23,13 +24,14 @@ export default function HomePage() {
       <Palmares />
 
       <Invitation />
+      <Contact />
+
       <TeamFormation />
 
       <FanZone />
       <Sponsors />
 
       <Values />
-
     </main>
   );
 }

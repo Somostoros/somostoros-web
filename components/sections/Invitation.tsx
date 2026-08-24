@@ -12,12 +12,12 @@ export default function Invitation() {
       {/* Fondos decorativos */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-[#35cad8]/10 blur-3xl"
+        className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-[#30CED8]/10 blur-3xl"
       />
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-[#35cad8]/10 blur-3xl"
+        className="pointer-events-none absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-[#30CED8]/10 blur-3xl"
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
@@ -30,13 +30,13 @@ export default function Invitation() {
           transition={{ duration: 0.7 }}
           className="mx-auto mb-14 max-w-3xl text-center"
         >
-          <p className="text-sm font-black uppercase tracking-[0.4em] text-[#35cad8]">
+          <p className="text-sm font-black uppercase tracking-[0.4em] text-[#30CED8]">
             FORMA PARTE DE LA HISTORIA
           </p>
 
           <h2 className="mt-4 text-4xl font-black uppercase tracking-tight sm:text-5xl lg:text-6xl">
             Tú también puedes
-            <span className="block text-[#35cad8]">
+            <span className="block text-[#30CED8]">
               ser parte de Los Toros
             </span>
           </h2>
@@ -56,7 +56,7 @@ export default function Invitation() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.25 }}
             transition={{ duration: 0.7 }}
-            className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] p-8 backdrop-blur-sm transition duration-500 hover:border-[#35cad8]/50 sm:p-10 lg:p-12"
+            className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] p-8 backdrop-blur-sm transition duration-500 hover:border-[#30CED8]/50 sm:p-10 lg:p-12"
           >
             {/* Número */}
             <div
@@ -69,17 +69,17 @@ export default function Invitation() {
             <div className="relative z-10">
 
               {/* Icono */}
-              <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl border border-[#35cad8]/30 bg-[#35cad8]/10 text-3xl">
+              <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl border border-[#30CED8]/30 bg-[#30CED8]/10 text-3xl">
                 ⚾
               </div>
 
-              <p className="text-xs font-black uppercase tracking-[0.3em] text-[#35cad8]">
+              <p className="text-xs font-black uppercase tracking-[0.3em] text-[#30CED8]">
                 PARA JUGADORES
               </p>
 
               <h3 className="mt-3 text-3xl font-black uppercase leading-tight sm:text-4xl">
                 ¿Quieres jugar
-                <span className="block text-[#35cad8]">
+                <span className="block text-[#30CED8]">
                   con los Toros?
                 </span>
               </h3>
@@ -92,24 +92,24 @@ export default function Invitation() {
 
               <ul className="mt-7 space-y-3 text-sm text-gray-300">
                 <li className="flex items-center gap-3">
-                  <span className="text-[#35cad8]">✓</span>
+                  <span className="text-[#30CED8]">✓</span>
                   Entrena y compite con nosotros
                 </li>
 
                 <li className="flex items-center gap-3">
-                  <span className="text-[#35cad8]">✓</span>
+                  <span className="text-[#30CED8]">✓</span>
                   Conoce a nuestra familia
                 </li>
 
                 <li className="flex items-center gap-3">
-                  <span className="text-[#35cad8]">✓</span>
+                  <span className="text-[#30CED8]">✓</span>
                   Vive el softball desde dentro
                 </li>
               </ul>
 
               <Link
                 href="#contacto-jugadores"
-                className="mt-9 inline-flex min-h-14 items-center justify-center rounded-full bg-[#35cad8] px-8 text-sm font-black uppercase tracking-[0.1em] text-black transition duration-300 hover:bg-white"
+                className="mt-9 inline-flex min-h-14 items-center justify-center rounded-full bg-[#30CED8] px-8 text-sm font-black uppercase tracking-[0.1em] text-black transition duration-300 hover:bg-white"
               >
                 Quiero jugar con los Toros
                 <span className="ml-3 text-lg">→</span>
@@ -123,7 +123,7 @@ export default function Invitation() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.25 }}
             transition={{ duration: 0.7 }}
-            className="group relative overflow-hidden rounded-3xl border border-[#35cad8]/20 bg-[#35cad8] p-8 text-black transition duration-500 hover:shadow-[0_20px_80px_rgba(53,202,216,0.15)] sm:p-10 lg:p-12"
+            className="group relative overflow-hidden rounded-3xl border border-[#30CED8]/20 bg-[#30CED8] p-8 text-black transition duration-500 hover:shadow-[0_20px_80px_rgba(48,206,216,0.15)] sm:p-10 lg:p-12"
           >
             {/* Número */}
             <div
