@@ -6,72 +6,102 @@ import Link from "next/link";
 const steps = [
   {
     number: "01",
-    title: "Reúne tu equipo",
+    title: "Reserva el nombre",
     description:
-      "Encuentra personas con ganas de jugar, entrenar y compartir la pasión por el softball.",
+      "Prepara al menos tres alternativas para el nombre de tu equipo y solicita previamente la reserva de denominación ante el Registro de Entidades Deportivas de la Comunitat Valenciana.",
+    link: "https://presidencia.gva.es/es/web/deporte/registro",
+    linkLabel: "Registro deportivo GVA",
   },
   {
     number: "02",
-    title: "Define tu club",
+    title: "Elige la figura deportiva",
     description:
-      "Elige el nombre de tu equipo, crea tu identidad y organiza la estructura básica del club.",
+      "Decide si vas a constituirte como Club Deportivo, pensado para el ámbito federado, o como Grupo de Recreación Deportiva si tu actividad se desarrollará al margen de la competición federada.",
+    link: "https://fbscv.com/formularis/",
+    linkLabel: "Formularios FBSCV",
   },
   {
     number: "03",
-    title: "Formaliza el club",
+    title: "Celebra la reunión fundacional",
     description:
-      "Prepara la documentación necesaria para constituir y organizar formalmente tu equipo.",
+      "Reúne como mínimo a tres socios fundadores mayores de edad. Completa el Acta de Constitución y los Estatutos y designa los cargos de presidente, vicepresidente y secretario.",
+    link: "https://sede.gva.es/es/detall-tramit?id_proc=193",
+    linkLabel: "Modelos y documentación GVA",
   },
   {
     number: "04",
-    title: "Regístrate",
+    title: "Inscribe tu entidad en la GVA",
     description:
-      "Te mostramos los pasos necesarios para completar los trámites y comenzar tu actividad deportiva.",
+      "Presenta telemáticamente la documentación en el Registro de Entidades Deportivas de la Comunitat Valenciana. Para realizar el trámite electrónico necesitarás identificación o certificado digital.",
+    link: "https://sede.gva.es/es/detall-tramit?id_proc=193",
+    linkLabel: "Realizar trámite GVA",
   },
   {
     number: "05",
-    title: "Prepárate para competir",
+    title: "Solicita el NIF",
     description:
-      "Organiza jugadores, licencias, equipación, campo, material y todo lo necesario para competir.",
+      "Una vez constituida la entidad, solicita su Número de Identificación Fiscal ante la Agencia Tributaria mediante el modelo 036 y aporta la documentación correspondiente.",
+    link: "https://sede.agenciatributaria.gob.es/Sede/censos-nif-domicilio-fiscal/solicitar-nif.html",
+    linkLabel: "Solicitar NIF · AEAT",
   },
   {
     number: "06",
-    title: "¡A jugar!",
+    title: "Prepárate para competir",
     description:
-      "Ya tienes tu equipo preparado. Ahora toca disfrutar del softball y empezar a escribir vuestra propia historia.",
+      "Si quieres competir federadamente, completa la adscripción y los trámites correspondientes con la federación. Después podrás organizar licencias, jugadores, instalaciones, material y competición.",
+    link: "https://fbscv.com/formularis/",
+    linkLabel: "Federación · Formularios",
   },
 ];
 
 const resources = [
   {
-    icon: "📕",
-    title: "Guía para crear un equipo",
-    description: "Una guía paso a paso para comenzar desde cero.",
+    icon: "🏷️",
+    title: "Reserva de nombre",
+    description:
+      "Información del Registro de Entidades Deportivas para comenzar el proceso.",
+    label: "GVA",
+    href: "https://presidencia.gva.es/es/web/deporte/registro",
   },
   {
     icon: "📄",
-    title: "Acta fundacional",
-    description: "Modelo de documento para formalizar la constitución.",
+    title: "Acta y Estatutos",
+    description:
+      "Consulta los modelos y documentación necesarios para constituir la entidad.",
+    label: "GVA",
+    href: "https://sede.gva.es/es/detall-tramit?id_proc=193",
   },
   {
-    icon: "📄",
-    title: "Estatutos",
-    description: "Modelo orientativo para organizar el club.",
+    icon: "⚾",
+    title: "Formularios federativos",
+    description:
+      "Documentación y formularios de la Federación de Béisbol y Softbol de la Comunitat Valenciana.",
+    label: "FBSCV",
+    href: "https://fbscv.com/formularis/",
   },
   {
-    icon: "📋",
-    title: "Documentación de inscripción",
-    description: "Documentos y requisitos que deberás preparar.",
+    icon: "🏛️",
+    title: "Inscripción de la entidad",
+    description:
+      "Accede al procedimiento oficial de inscripción deportiva de la Generalitat Valenciana.",
+    label: "GVA",
+    href: "https://sede.gva.es/es/detall-tramit?id_proc=193",
   },
   {
-    icon: "📕",
-    title: "Guía de trámites",
-    description: "Te ayudamos a entender el proceso administrativo.",
+    icon: "🧾",
+    title: "Solicitar el NIF",
+    description:
+      "Información oficial de la Agencia Tributaria para solicitar el NIF mediante el modelo 036.",
+    label: "AEAT",
+    href: "https://sede.agenciatributaria.gob.es/Sede/censos-nif-domicilio-fiscal/solicitar-nif.html",
   },
   {
     icon: "✅",
-    title: "Checklist",
-    description: "Comprueba que no te falta ningún paso antes de empezar.",
+    title: "Checklist Toros",
+    description:
+      "Una lista práctica para comprobar que tienes preparados todos los pasos y documentos.",
+    label: "PRÓXIMAMENTE",
+    href: null,
   },
 ];
 
@@ -84,12 +114,12 @@ export default function TeamFormation() {
       {/* Decoración */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-[#35cad8]/10 blur-3xl"
+        className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-[#30CED8]/10 blur-3xl"
       />
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-[#35cad8]/5 blur-3xl"
+        className="pointer-events-none absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-[#30CED8]/5 blur-3xl"
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
@@ -102,13 +132,13 @@ export default function TeamFormation() {
           transition={{ duration: 0.7 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <p className="text-sm font-black uppercase tracking-[0.4em] text-[#35cad8]">
+          <p className="text-sm font-black uppercase tracking-[0.4em] text-[#30CED8]">
             HACEMOS CRECER EL SOFTBALL
           </p>
 
           <h2 className="mt-4 text-4xl font-black uppercase tracking-tight sm:text-5xl lg:text-6xl">
             Te ayudamos a
-            <span className="block text-[#35cad8]">
+            <span className="block text-[#30CED8]">
               formar tu equipo
             </span>
           </h2>
@@ -119,7 +149,7 @@ export default function TeamFormation() {
             preparado para competir.
           </p>
 
-          <div className="mx-auto mt-7 h-1 w-20 rounded-full bg-[#35cad8]" />
+          <div className="mx-auto mt-7 h-1 w-20 rounded-full bg-[#30CED8]" />
         </motion.div>
 
         {/* PASOS */}
@@ -128,7 +158,7 @@ export default function TeamFormation() {
           {/* Línea */}
           <div
             aria-hidden="true"
-            className="absolute left-5 top-0 hidden h-full w-px bg-gradient-to-b from-[#35cad8] via-[#35cad8]/30 to-transparent md:block"
+            className="absolute left-5 top-0 hidden h-full w-px bg-gradient-to-b from-[#30CED8] via-[#30CED8]/30 to-transparent md:block"
           />
 
           <div className="space-y-8">
@@ -145,11 +175,11 @@ export default function TeamFormation() {
                 className="relative md:pl-16"
               >
                 {/* Punto */}
-                <div className="absolute left-0 top-7 hidden h-10 w-10 items-center justify-center rounded-full border border-[#35cad8]/40 bg-[#111111] text-xs font-black text-[#35cad8] md:flex">
+                <div className="absolute left-0 top-7 hidden h-10 w-10 items-center justify-center rounded-full border border-[#30CED8]/40 bg-[#111111] text-xs font-black text-[#30CED8] md:flex">
                   {step.number}
                 </div>
 
-                <div className="group rounded-3xl border border-white/10 bg-white/[0.035] p-7 backdrop-blur-sm transition duration-500 hover:-translate-y-1 hover:border-[#35cad8]/40 hover:bg-white/[0.05] sm:p-8">
+                <div className="group rounded-3xl border border-white/10 bg-white/[0.035] p-7 backdrop-blur-sm transition duration-500 hover:-translate-y-1 hover:border-[#30CED8]/40 hover:bg-white/[0.05] sm:p-8">
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
 
                     <div className="shrink-0">
@@ -157,7 +187,7 @@ export default function TeamFormation() {
                         {step.number}
                       </span>
 
-                      <span className="hidden text-5xl font-black text-[#35cad8]/20 sm:block">
+                      <span className="hidden text-5xl font-black text-[#30CED8]/20 sm:block">
                         {step.number}
                       </span>
                     </div>
@@ -170,6 +200,15 @@ export default function TeamFormation() {
                       <p className="mt-2 max-w-3xl text-base leading-7 text-gray-400">
                         {step.description}
                       </p>
+                      <a
+                       href={step.link}
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="mt-4 inline-flex items-center text-xs font-black uppercase tracking-[0.15em] text-[#30CED8] transition hover:text-white"
+                      >
+                       {step.linkLabel}
+                       <span className="ml-2">↗</span>
+                      </a>
                     </div>
 
                   </div>
@@ -188,7 +227,7 @@ export default function TeamFormation() {
           className="mt-28"
         >
           <div className="mb-10 text-center">
-            <p className="text-sm font-black uppercase tracking-[0.35em] text-[#35cad8]">
+            <p className="text-sm font-black uppercase tracking-[0.35em] text-[#30CED8]">
               RECURSOS
             </p>
 
@@ -206,7 +245,7 @@ export default function TeamFormation() {
             {resources.map((resource) => (
               <div
                 key={resource.title}
-                className="group rounded-2xl border border-white/10 bg-white/[0.035] p-6 transition duration-300 hover:border-[#35cad8]/40 hover:bg-white/[0.06]"
+                className="group rounded-2xl border border-white/10 bg-white/[0.035] p-6 transition duration-300 hover:border-[#30CED8]/40 hover:bg-white/[0.06]"
               >
                 <div className="flex items-start justify-between gap-4">
                   <span className="text-3xl">
@@ -214,7 +253,7 @@ export default function TeamFormation() {
                   </span>
 
                   <span className="rounded-full border border-white/10 px-3 py-1 text-[10px] font-black uppercase tracking-wider text-white/40">
-                    PDF
+                   {resource.label}
                   </span>
                 </div>
 
@@ -226,14 +265,34 @@ export default function TeamFormation() {
                   {resource.description}
                 </p>
 
-                <button
-                  type="button"
-                  className="mt-5 text-xs font-black uppercase tracking-[0.15em] text-[#35cad8] transition hover:text-white"
+                {resource.href ? (
+                <a
+                   href={resource.href}
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className="mt-5 inline-flex text-xs font-black uppercase tracking-[0.15em] text-[#30CED8] transition hover:text-white"
                 >
-                  Próximamente →
-                </button>
+                   Abrir recurso
+                   <span className="ml-2">↗</span>
+                 </a>
+              ) : (
+                 <span className="mt-5 inline-flex text-xs font-black uppercase tracking-[0.15em] text-white/30">
+                   Próximamente
+                </span>
+                )}
               </div>
             ))}
+          </div>
+          <div className="mx-auto mt-8 max-w-4xl rounded-2xl border border-white/10 bg-black/20 px-6 py-5">
+            <p className="text-sm leading-6 text-white/45">
+            <strong className="font-bold text-white/70">
+             Importante:
+            </strong>{" "}
+             esta guía tiene carácter orientativo. Los procedimientos, requisitos y
+             tasas pueden cambiar. Antes de presentar cualquier documentación,
+             comprueba siempre la información vigente en los organismos oficiales
+             enlazados.
+            </p>
           </div>
         </motion.div>
 
@@ -243,7 +302,7 @@ export default function TeamFormation() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="mt-20 overflow-hidden rounded-3xl border border-[#35cad8]/20 bg-[#35cad8] p-8 text-center text-black sm:p-12"
+          className="mt-20 overflow-hidden rounded-3xl border border-[#30CED8]/20 bg-[#30CED8] p-8 text-center text-black sm:p-12"
         >
           <p className="text-sm font-black uppercase tracking-[0.3em] text-black/60">
             ¿NO SABES POR DÓNDE EMPEZAR?
@@ -263,7 +322,7 @@ export default function TeamFormation() {
             href="#contacto"
             className="mt-8 inline-flex min-h-14 items-center justify-center rounded-full bg-black px-8 text-sm font-black uppercase tracking-[0.1em] text-white transition hover:bg-white hover:text-black"
           >
-            Quiero formar un equipo
+            Habla con los Toros
             <span className="ml-3 text-lg">→</span>
           </Link>
         </motion.div>
