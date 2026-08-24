@@ -172,16 +172,20 @@ export default function Footer() {
               <div className="mt-6 flex flex-wrap gap-3">
 
                 <a
-                  href="#instagram"
-                  aria-label="Instagram"
+                  href="https://www.instagram.com/torosdealicante/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram de Los Toros de Alicante"
                   className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-xs font-black text-white transition hover:border-[#30CED8] hover:bg-[#30CED8] hover:text-black"
                 >
                   IG
                 </a>
 
                 <a
-                  href="#facebook"
-                  aria-label="Facebook"
+                  href="https://www.facebook.com/torosdealicante"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook de Los Toros de Alicante"
                   className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-xs font-black text-white transition hover:border-[#30CED8] hover:bg-[#30CED8] hover:text-black"
                 >
                   FB
