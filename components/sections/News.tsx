@@ -34,7 +34,7 @@ export default function News() {
             </div>
 
             <Link
-              href="#noticias"
+              href="/noticias"
               className="group text-sm font-bold uppercase tracking-[0.15em] text-[#30CED8]"
             >
               Ver todas las noticias
@@ -71,7 +71,6 @@ export default function News() {
                 lg:col-span-5
               "
             >
-              {/* etiqueta */}
               <div className="flex items-center justify-between">
                 <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#30CED8]">
                   Último resultado
@@ -82,12 +81,10 @@ export default function News() {
                 </span>
               </div>
 
-              {/* competición */}
               <p className="mt-8 text-xs font-semibold uppercase tracking-[0.2em] text-gray-500">
-                Campeonato Federado de Murcia
+                III Copa de la Liga Autonómica de Softbol Masculino
               </p>
 
-              {/* marcador */}
               <div className="mt-8 flex items-center justify-between gap-5">
 
                 {/* Toros */}
@@ -146,23 +143,22 @@ export default function News() {
                 </div>
               </div>
 
-              {/* CAMPEONES */}
               <div className="mt-9 border-t border-white/10 pt-6">
                 <p className="text-2xl font-black text-[#30CED8]">
                   🏆 CAMPEONES
                 </p>
 
                 <p className="mt-2 text-sm leading-6 text-gray-400">
-                  Los Toros de Alicante conquistan el campeonato federado
-                  de Murcia.
+                  Los Toros de Alicante conquistan la III Copa de la Liga
+                  Autonómica de Softbol Masculino.
                 </p>
               </div>
 
               <Link
-                href="#resultado"
+                href="/noticias/toros-de-alicante-conquistan-la-iii-copa"
                 className="mt-6 inline-block text-xs font-black uppercase tracking-[0.15em] text-white transition hover:text-[#30CED8]"
               >
-                Ver resultado completo →
+                Leer crónica completa →
               </Link>
             </article>
 
@@ -196,7 +192,6 @@ export default function News() {
                 </span>
               </div>
 
-              {/* Fecha */}
               <div className="mt-10 text-center">
                 <p className="text-xs font-bold uppercase tracking-[0.3em] text-gray-500">
                   Próximamente
@@ -207,9 +202,7 @@ export default function News() {
                 </p>
               </div>
 
-              {/* Equipos */}
               <div className="mt-8 space-y-5">
-
                 <div className="rounded-2xl border border-[#30CED8]/20 bg-[#30CED8]/5 p-4 text-center">
                   <p className="text-lg font-black uppercase text-white">
                     Toros
@@ -233,17 +226,15 @@ export default function News() {
                     Por confirmar
                   </p>
                 </div>
-
               </div>
 
-              <Link
-                href="#calendario"
+              <div
                 className="
                   mt-8
                   block
                   rounded-full
                   border
-                  border-white/15
+                  border-white/10
                   px-5
                   py-3
                   text-center
@@ -251,14 +242,11 @@ export default function News() {
                   font-black
                   uppercase
                   tracking-wider
-                  text-white
-                  transition
-                  hover:border-[#30CED8]
-                  hover:text-[#30CED8]
+                  text-white/30
                 "
               >
-                Ver calendario →
-              </Link>
+                Calendario próximamente
+              </div>
             </article>
 
             {/* =====================================================
@@ -282,22 +270,16 @@ export default function News() {
                 lg:col-span-4
               "
             >
-
-              {/* Fotografía provisional */}
+              {/* Fondo provisional */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#182829] via-[#101718] to-[#080b0c]">
-
-                {/* textura visual */}
                 <div className="absolute inset-0 opacity-20">
                   <div className="absolute -right-10 -top-10 h-48 w-48 rounded-full border-[30px] border-[#30CED8]/20" />
                   <div className="absolute -bottom-20 -left-10 h-60 w-60 rounded-full border-[40px] border-white/5" />
                 </div>
-
               </div>
 
-              {/* degradado */}
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/10" />
 
-              {/* contenido */}
               <div className="relative flex h-full min-h-[430px] flex-col justify-end p-7">
 
                 <div className="mb-auto pt-7">
@@ -308,19 +290,20 @@ export default function News() {
 
                 <div>
                   <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#30CED8]">
-                    HISTORIA
+                    CAMPEONES
                   </p>
 
                   <h3 className="mt-3 text-3xl font-black leading-tight text-white">
-                    Los Toros hacen historia
+                    Los Toros conquistan la III Copa
                   </h3>
 
                   <p className="mt-4 max-w-sm text-sm leading-6 text-gray-300">
-                    Un nuevo capítulo en la historia deportiva del club.
+                    Dos victorias y un 18–11 en la final para conquistar
+                    un nuevo título.
                   </p>
 
                   <Link
-                    href="#noticias"
+                    href="/noticias/toros-de-alicante-conquistan-la-iii-copa"
                     className="mt-6 inline-block text-xs font-black uppercase tracking-[0.15em] text-white transition hover:text-[#30CED8]"
                   >
                     Leer noticia →
