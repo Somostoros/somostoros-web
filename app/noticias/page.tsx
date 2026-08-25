@@ -3,9 +3,23 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Actualidad | Los Toros de Alicante",
+  title: "Actualidad",
   description:
     "Noticias y actualidad del Club de Béisbol y Softbol Los Toros de Alicante.",
+
+  alternates: {
+    canonical: "/noticias",
+  },
+
+  openGraph: {
+    type: "website",
+    url: "/noticias",
+    locale: "es_ES",
+    siteName: "Los Toros de Alicante",
+    title: "Actualidad | Los Toros de Alicante",
+    description:
+      "Noticias, resultados y actualidad deportiva de Los Toros de Alicante.",
+  },
 };
 
 export default function NoticiasPage() {

@@ -2,9 +2,23 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Palmarés | Los Toros de Alicante",
+  title: "Palmarés",
   description:
     "Historia, títulos y logros deportivos de Los Toros de Alicante desde 2021.",
+
+  alternates: {
+    canonical: "/palmares",
+  },
+
+  openGraph: {
+    type: "website",
+    url: "/palmares",
+    locale: "es_ES",
+    siteName: "Los Toros de Alicante",
+    title: "Palmarés | Los Toros de Alicante",
+    description:
+      "Conoce los títulos, estrellas y logros deportivos de Los Toros de Alicante.",
+  },
 };
 
 const federatedTitles = [
