@@ -1,11 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
-  title:
-    "Los Toros de Alicante conquistan la III Copa de la Liga Autonómica de Softbol Masculino",
+  title: {
+    default: "Los Toros de Alicante | Club de Béisbol y Softbol",
+    template: "%s | Los Toros de Alicante",
+  },
   description:
-    "Los Toros de Alicante se proclamaron campeones de la III Copa de la Liga Autonómica de Softbol Masculino tras vencer a Gladiadores de San Vicente y Marineros de Benidorm.",
+    "Club de Béisbol y Softbol Los Toros de Alicante. #SomosToros. No importa quién seas. Si te gusta el softball, aquí tienes tu sitio.",
+  openGraph: {
+    type: "website",
+    locale: "es_ES",
+    siteName: "Los Toros de Alicante",
+    title: "Los Toros de Alicante | Club de Béisbol y Softbol",
+    description:
+      "Club de Béisbol y Softbol Los Toros de Alicante. Noticias, competición, equipo y actualidad.",
+  },
 };
 
 export default function CopaLigaAutonomicaPage() {
