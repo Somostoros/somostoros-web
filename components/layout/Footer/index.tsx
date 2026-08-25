@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 const navigation = [
   { label: "Inicio", href: "/#inicio" },
@@ -163,46 +164,47 @@ export default function Footer() {
             </div>
 
             {/* REDES */}
-            <div className="lg:col-span-2">
+<div className="relative z-20 lg:col-span-2">
 
-              <h3 className="text-xs font-black uppercase tracking-[0.3em] text-[#30CED8]">
-                Síguenos
-              </h3>
+  <h3 className="text-xs font-black uppercase tracking-[0.3em] text-[#30CED8]">
+    Síguenos
+  </h3>
 
-              <div className="mt-6 flex flex-wrap gap-3">
+  <div className="relative z-20 mt-6 flex flex-wrap gap-3">
 
-                <a
-                  href="https://www.instagram.com/torosdealicante/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram de Los Toros de Alicante"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-xs font-black text-white transition hover:border-[#30CED8] hover:bg-[#30CED8] hover:text-black"
-                >
-                  IG
-                </a>
+    {/* Instagram */}
+    <a
+      href="https://www.instagram.com/torosdealicante/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram de Los Toros de Alicante"
+      title="Instagram"
+      className="group flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border border-[#30CED8]/30 bg-[#30CED8]/5 text-[#30CED8] transition-all duration-300 hover:scale-110 hover:border-[#30CED8] hover:bg-[#30CED8] hover:text-black"
+    >
+      <FaInstagram
+        aria-hidden="true"
+        className="h-5 w-5"
+      />
+    </a>
 
-                <a
-                  href="https://www.facebook.com/torosdealicante"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook de Los Toros de Alicante"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-xs font-black text-white transition hover:border-[#30CED8] hover:bg-[#30CED8] hover:text-black"
-                >
-                  FB
-                </a>
+    {/* Facebook */}
+    <a
+      href="https://www.facebook.com/torosdealicante"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebook de Los Toros de Alicante"
+      title="Facebook"
+      className="group flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border border-[#30CED8]/30 bg-[#30CED8]/5 text-[#30CED8] transition-all duration-300 hover:scale-110 hover:border-[#30CED8] hover:bg-[#30CED8] hover:text-black"
+    >
+      <FaFacebookF
+        aria-hidden="true"
+        className="h-5 w-5"
+      />
+    </a>
 
-                <a
-                  href="#tiktok"
-                  aria-label="TikTok"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-xs font-black text-white transition hover:border-[#30CED8] hover:bg-[#30CED8] hover:text-black"
-                >
-                  TK
-                </a>
+  </div>
 
-              </div>
-
-            </div>
-
+</div>
           </div>
 
           {/* SEPARADOR */}
