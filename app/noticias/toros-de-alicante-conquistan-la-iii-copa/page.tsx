@@ -3,19 +3,30 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: {
-    default: "Los Toros de Alicante | Club de Béisbol y Softbol",
-    template: "%s | Los Toros de Alicante",
-  },
+  title: "Los Toros conquistan la III Copa",
   description:
-    "Club de Béisbol y Softbol Los Toros de Alicante. #SomosToros. No importa quién seas. Si te gusta el softball, aquí tienes tu sitio.",
+    "Los Toros de Alicante se proclamaron campeones de la III Copa de la Liga Autonómica de Softbol Masculino tras vencer a Gladiadores de San Vicente y Marineros de Benidorm.",
+
+  alternates: {
+    canonical: "/noticias/toros-de-alicante-conquistan-la-iii-copa",
+  },
+
   openGraph: {
-    type: "website",
+    type: "article",
+    url: "/noticias/toros-de-alicante-conquistan-la-iii-copa",
     locale: "es_ES",
     siteName: "Los Toros de Alicante",
-    title: "Los Toros de Alicante | Club de Béisbol y Softbol",
+    title:
+      "Los Toros de Alicante conquistan la III Copa de la Liga Autonómica",
     description:
-      "Club de Béisbol y Softbol Los Toros de Alicante. Noticias, competición, equipo y actualidad.",
+      "Victoria 18–11 ante Marineros de Benidorm y Óscar Ulacio reconocido como MVP de la competición.",
+    publishedTime: "2026-07-12T12:00:00+02:00",
+    images: [
+      {
+        url: "/images/news/iii-copa-2026.jpeg",
+        alt: "Los Toros de Alicante celebran con el trofeo de la III Copa",
+      },
+    ],
   },
 };
 

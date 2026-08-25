@@ -6,8 +6,14 @@ export const metadata: Metadata = {
   title: "Los Toros ya conocen su grupo para la Liga Suprema Alicante 2K26",
   description:
     "Los Toros de Alicante competirán en el Grupo D de la Liga Suprema Alicante 2K26 junto a Gladiadores, Marineros y Monarcas. El torneo comenzará el 6 de septiembre.",
+
+  alternates: {
+    canonical: "/noticias/toros-de-alicante-grupo-liga-suprema-2k26",
+  },
+
   openGraph: {
     type: "article",
+    url: "/noticias/toros-de-alicante-grupo-liga-suprema-2k26",
     locale: "es_ES",
     siteName: "Los Toros de Alicante",
     title:
