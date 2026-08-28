@@ -30,9 +30,55 @@ export const metadata: Metadata = {
   },
 };
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "@id":
+    "https://www.somostoros.com/noticias/toros-de-alicante-conquistan-la-iii-copa#article",
+
+  headline:
+    "Los Toros de Alicante conquistan la III Copa de la Liga Autonómica",
+
+  description:
+    "Los Toros de Alicante se proclamaron campeones de la III Copa de la Liga Autonómica de Softbol Masculino tras vencer a Gladiadores de San Vicente y Marineros de Benidorm.",
+
+  image: [
+    "https://www.somostoros.com/images/news/iii-copa-2026.jpeg",
+  ],
+
+  datePublished: "2026-07-12T12:00:00+02:00",
+  dateModified: "2026-07-12T12:00:00+02:00",
+
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id":
+      "https://www.somostoros.com/noticias/toros-de-alicante-conquistan-la-iii-copa",
+  },
+
+  author: {
+    "@id": "https://www.somostoros.com/#organization",
+  },
+
+  publisher: {
+    "@id": "https://www.somostoros.com/#organization",
+  },
+
+  about: {
+    "@id": "https://www.somostoros.com/#organization",
+  },
+
+  inLanguage: "es",
+};
+
 export default function CopaLigaAutonomicaPage() {
   return (
     <main className="min-h-screen bg-[#020708] text-white">
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(articleSchema),
+  }}
+/>
 
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10 px-6 pb-20 pt-36 sm:pb-24 sm:pt-44">

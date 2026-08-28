@@ -30,6 +30,45 @@ export const metadata: Metadata = {
   },
 };
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "@id":
+    "https://www.somostoros.com/noticias/toros-de-alicante-grupo-liga-suprema-2k26#article",
+
+  headline:
+    "Los Toros ya conocen su Grupo D para la Liga Suprema Alicante 2K26",
+
+  description:
+    "Los Toros de Alicante competirán en el Grupo D de la Liga Suprema Alicante 2K26 junto a Gladiadores, Marineros y Monarcas. El torneo comenzará el 6 de septiembre.",
+
+  image: [
+    "https://www.somostoros.com/images/news/liga-suprema-alicante-2k26.png",
+  ],
+
+  datePublished: "2026-08-25T12:00:00+02:00",
+  dateModified: "2026-08-25T12:00:00+02:00",
+
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id":
+      "https://www.somostoros.com/noticias/toros-de-alicante-grupo-liga-suprema-2k26",
+  },
+
+  author: {
+    "@id": "https://www.somostoros.com/#organization",
+  },
+
+  publisher: {
+    "@id": "https://www.somostoros.com/#organization",
+  },
+
+  about: {
+    "@id": "https://www.somostoros.com/#organization",
+  },
+
+  inLanguage: "es",
+};
 
 const groups = [
   {
@@ -73,6 +112,12 @@ const groups = [
 export default function LigaSupremaGrupoPage() {
   return (
     <main className="min-h-screen bg-[#020708] text-white">
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(articleSchema),
+  }}
+/>
 
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10 px-6 pb-20 pt-36 sm:pb-24 sm:pt-44">
