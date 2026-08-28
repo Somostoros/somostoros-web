@@ -3,45 +3,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const fanItems = [
-  {
-    title: "Tienda",
-    subtitle: "VISTE LOS COLORES",
-    description:
-      "Camisetas, gorras y merchandising para llevar el espíritu de Los Toros contigo.",
-    icon: "🛍️",
-    href: "#tienda",
-    large: true,
-  },
-  {
-    title: "Fotos",
-    subtitle: "VIVE LOS MOMENTOS",
-    description:
-      "Los mejores momentos del equipo dentro y fuera del campo.",
-    icon: "📸",
-    href: "#galeria",
-    large: false,
-  },
-  {
-    title: "Vídeos",
-    subtitle: "Siente el juego",
-    description:
-      "Partidos, jugadas, celebraciones y mucho más.",
-    icon: "🎥",
-    href: "#videos",
-    large: false,
-  },
-  {
-    title: "Redes sociales",
-    subtitle: "SIGUE A LOS TOROS",
-    description:
-      "No te pierdas ninguna noticia, partido o momento del equipo.",
-    icon: "📱",
-    href: "#redes",
-    large: true,
-  },
-];
-
 export default function FanZone() {
   return (
     <section
@@ -90,7 +51,6 @@ export default function FanZone() {
             transition={{ duration: 0.7 }}
             className="group relative overflow-hidden rounded-3xl border border-white/10 bg-[#111111] p-8 lg:col-span-7 lg:min-h-[360px] lg:p-10"
           >
-            {/* Número decorativo */}
             <span
               aria-hidden="true"
               className="absolute -right-5 -top-12 text-[190px] font-black leading-none text-white/[0.025]"
@@ -99,7 +59,6 @@ export default function FanZone() {
             </span>
 
             <div className="relative z-10 flex h-full flex-col justify-between">
-
               <div>
                 <div className="flex items-start justify-between">
                   <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#35cad8]/10 text-3xl">
@@ -132,7 +91,6 @@ export default function FanZone() {
                 Entrar en la tienda
                 <span className="ml-3 text-lg">→</span>
               </Link>
-
             </div>
           </motion.article>
 
@@ -237,7 +195,6 @@ export default function FanZone() {
             </span>
 
             <div className="relative z-10 flex h-full flex-col justify-between">
-
               <div>
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-black/10 text-2xl">
                   📱
@@ -258,30 +215,46 @@ export default function FanZone() {
               </div>
 
               <div className="mt-8 flex flex-wrap gap-3">
-
-                <Link
-                  href="#instagram"
-                  className="rounded-full bg-black px-5 py-3 text-xs font-black uppercase tracking-[0.1em] text-white transition hover:bg-white hover:text-black"
+                <a
+                  href="https://www.instagram.com/torosdealicante/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram de Los Toros de Alicante"
+                  className="inline-flex items-center gap-2 rounded-full bg-black px-5 py-3 text-xs font-black uppercase tracking-[0.1em] text-white transition hover:bg-white hover:text-black"
                 >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="h-4 w-4"
+                    aria-hidden="true"
+                  >
+                    <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 1.75a4 4 0 0 0-4 4v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-8.5a4 4 0 0 0-4-4h-8.5Zm8.88 1.31a1.06 1.06 0 1 1 0 2.12 1.06 1.06 0 0 1 0-2.12ZM12 7.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 1.75a3.15 3.15 0 1 0 0 6.3 3.15 3.15 0 0 0 0-6.3Z" />
+                  </svg>
+
                   Instagram
-                </Link>
+                </a>
 
-                <Link
-                  href="#facebook"
-                  className="rounded-full bg-black/10 px-5 py-3 text-xs font-black uppercase tracking-[0.1em] text-black transition hover:bg-white hover:text-black"
+                <a
+                  href="https://www.facebook.com/torosdealicante/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook de Los Toros de Alicante"
+                  className="inline-flex items-center gap-2 rounded-full bg-black/10 px-5 py-3 text-xs font-black uppercase tracking-[0.1em] text-black transition hover:bg-white"
                 >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="h-4 w-4"
+                    aria-hidden="true"
+                  >
+                    <path d="M13.5 22v-8h2.75l.41-3H13.5V9.08c0-.87.24-1.46 1.53-1.46h1.63V4.94c-.28-.04-1.25-.12-2.38-.12-2.35 0-3.96 1.43-3.96 4.07V11H7.66v3h2.66v8h3.18Z" />
+                  </svg>
+
                   Facebook
-                </Link>
-
-                <Link
-                  href="#tiktok"
-                  className="rounded-full bg-black/10 px-5 py-3 text-xs font-black uppercase tracking-[0.1em] text-black transition hover:bg-white hover:text-black"
-                >
-                  TikTok
-                </Link>
-
+                </a>
               </div>
-
             </div>
           </motion.article>
 

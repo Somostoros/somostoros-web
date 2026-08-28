@@ -133,10 +133,10 @@ export default function Hero() {
 
           {/* Descripción */}
           <div className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-white sm:text-xl lg:text-2xl">
-            <p>Un equipo</p>
+            <p>El equipo</p>
 
             <p className="mt-2 font-extrabold">
-              CON DENOMINACIÓN DE ORIGEN
+              MAS FELIZ DE ALICANTE (y el más laureado también **)
             </p>
           </div>
 

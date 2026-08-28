@@ -249,14 +249,14 @@ export default function Competition() {
               </p>
 
               <h3 className="mt-2 text-2xl font-black uppercase sm:text-3xl">
-                Liga Autonómica
+                LIGA SUPREMA · GRUPO D
               </h3>
             </div>
 
             <div
               aria-disabled="true"
               className="inline-flex cursor-default items-center justify-center rounded-full border border-[#30CED8]/40 px-6 py-3 text-sm font-black uppercase tracking-wider text-[#30CED8]/60"
-              >
+            >
               Clasificación próximamente
             </div>
           </div>
@@ -313,9 +313,8 @@ export default function Competition() {
               {/* OTROS EQUIPOS */}
               {[
                 "Marineros",
-                "Caribes",
-                "Vikingos",
-                "Tigres",
+                "Monarcas",
+                "Gladiadores",
               ].map((team, index) => (
                 <div
                   key={team}
