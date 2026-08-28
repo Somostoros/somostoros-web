@@ -36,6 +36,25 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "SportsOrganization",
+  "@id": "https://www.somostoros.com/#organization",
+  name: "Los Toros de Alicante",
+  alternateName: "Toros de Alicante",
+  url: "https://www.somostoros.com",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://www.somostoros.com/logos/logo-toros.png",
+  },
+  image: "https://www.somostoros.com/logos/logo-toros.png",
+  sport: ["Baseball", "Softball"],
+  sameAs: [
+    "https://www.instagram.com/torosdealicante/",
+    "https://www.facebook.com/torosdealicante",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -43,9 +62,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable}`}
+      >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+
         <Header />
+
         {children}
+
         <Footer />
       </body>
     </html>
