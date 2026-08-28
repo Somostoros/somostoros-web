@@ -19,20 +19,20 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.somostoros.com"),
 
   title: {
-    default: "Los Toros de Alicante | Club de Béisbol y Softbol",
+    default: "Los Toros de Alicante | Club de Béisbol y Softbol en Alicante",
     template: "%s | Los Toros de Alicante",
   },
 
   description:
-    "Club de Béisbol y Softbol Los Toros de Alicante. #SomosToros. No importa quién seas. Si te gusta el softball, aquí tienes tu sitio.",
+    "Club de Béisbol y Softbol en Alicante. Conoce a Los Toros de Alicante, nuestro equipo, competiciones, resultados, noticias, palmarés y cómo unirte al club.",
 
   openGraph: {
     type: "website",
     locale: "es_ES",
     siteName: "Los Toros de Alicante",
-    title: "Los Toros de Alicante | Club de Béisbol y Softbol",
+    title: "Los Toros de Alicante | Club de Béisbol y Softbol en Alicante",
     description:
-      "Club de Béisbol y Softbol Los Toros de Alicante. Noticias, competición, equipo y actualidad.",
+      "Club de Béisbol y Softbol en Alicante. Equipo, competiciones, resultados, noticias, palmarés y actualidad de Los Toros de Alicante",
   },
 };
 
@@ -48,7 +48,7 @@ const organizationSchema = {
     url: "https://www.somostoros.com/logos/logo-toros.png",
   },
   image: "https://www.somostoros.com/logos/logo-toros.png",
-  sport: ["Baseball", "Softball"],
+  sport: ["Béisbol", "Softbol"],
   sameAs: [
     "https://www.instagram.com/torosdealicante/",
     "https://www.facebook.com/torosdealicante",

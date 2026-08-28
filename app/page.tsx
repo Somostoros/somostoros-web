@@ -17,6 +17,25 @@ export default function HomePage() {
       <Hero />
       <News />
 
+      <section
+        aria-labelledby="club-alicante-title"
+        className="mx-auto max-w-5xl px-6 py-10 text-center md:py-14"
+      >
+        <h2
+          id="club-alicante-title"
+          className="text-2xl font-bold tracking-tight text-white md:text-3xl"
+        >
+          Club de béisbol y softbol en Alicante
+        </h2>
+
+        <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-white/70 md:text-lg">
+          Los Toros de Alicante somos un club nacido en 2021 y formado por
+          jugadores unidos por la pasión por el béisbol y el softbol. Competimos,
+          entrenamos y trabajamos para seguir haciendo crecer estos deportes en
+          Alicante.
+        </p>
+      </section>
+
       <History />
       <Team />
 
