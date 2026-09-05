@@ -41,6 +41,56 @@ export default function NoticiasPage() {
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
+        {/* DEBUT LIGA SUPREMA */}
+<Link
+  href="/noticias/toros-debut-marineros-liga-suprema-2026"
+  className="group overflow-hidden rounded-3xl border border-[#30CED8]/30 bg-[#0d1314] transition duration-500 hover:-translate-y-1 hover:border-[#30CED8]/70"
+>
+  <div className="relative flex min-h-64 items-center justify-center overflow-hidden bg-gradient-to-br from-[#183436] via-[#101819] to-[#080b0c] p-8">
+
+    <div
+      aria-hidden="true"
+      className="absolute -right-10 -top-10 h-48 w-48 rounded-full border-[30px] border-[#30CED8]/10"
+    />
+
+    <div
+      aria-hidden="true"
+      className="absolute -bottom-20 -left-16 h-56 w-56 rounded-full bg-[#30CED8]/5 blur-3xl"
+    />
+
+    <Image
+      src="/images/news/liga-suprema-alicante-2k26.png"
+      alt="Toros de Alicante vs Marineros en la Liga Suprema Alicante 2026"
+      width={280}
+      height={280}
+      className="relative z-10 h-44 w-44 object-contain transition duration-500 group-hover:scale-105"
+    />
+
+    <span className="absolute left-6 top-6 z-20 rounded-full bg-[#30CED8] px-3 py-1 text-[10px] font-black uppercase tracking-wider text-black">
+      Próximo partido
+    </span>
+  </div>
+
+  <div className="p-7">
+    <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#30CED8]">
+      5 septiembre 2026
+    </p>
+
+    <h2 className="mt-3 text-2xl font-black leading-tight text-white">
+      Los Toros debutan este domingo ante Marineros
+    </h2>
+
+    <p className="mt-4 text-sm leading-7 text-gray-400">
+      Los Toros de Alicante comienzan la Liga Suprema este domingo
+      6 de septiembre a las 09:00 en Rigas frente a Marineros.
+    </p>
+
+    <p className="mt-6 text-xs font-black uppercase tracking-[0.15em] text-[#30CED8]">
+      Leer noticia →
+    </p>
+  </div>
+</Link>
+
           {/* LIGA SUPREMA 2K26 */}
 <Link
   href="/noticias/toros-de-alicante-grupo-liga-suprema-2k26"

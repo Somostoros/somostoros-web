@@ -154,7 +154,7 @@ export default function Competition() {
                   </p>
 
                   <p className="mt-2 text-sm font-bold text-black/50">
-                    Próxima jornada
+                    Liga Suprema de Alicante 2026 · Grupo D
                   </p>
                 </div>
 
@@ -183,12 +183,12 @@ export default function Competition() {
                 <div className="flex-1">
                   <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full border-2 border-black/20 bg-black/10">
                     <span className="text-xs font-black">
-                      RIVAL
+                      MARINEROS
                     </span>
                   </div>
 
                   <p className="text-lg font-black uppercase">
-                    Próximo rival
+                    Marineros
                   </p>
                 </div>
 
@@ -203,7 +203,7 @@ export default function Competition() {
                   </p>
 
                   <p className="mt-1 font-black">
-                    Próximamente
+                    Dom. 6 septiembre · 09:00
                   </p>
                 </div>
 
@@ -213,7 +213,7 @@ export default function Competition() {
                   </p>
 
                   <p className="mt-1 font-black">
-                    Por confirmar
+                    Rigas (San Vicente del Raspeig)
                   </p>
                 </div>
 
@@ -223,7 +223,7 @@ export default function Competition() {
                 aria-disabled="true"
                 className="mt-6 inline-flex w-full cursor-default items-center justify-center rounded-full bg-black/80 px-6 py-4 text-sm font-black uppercase tracking-wider text-white/60"
               >
-                Calendario próximamente
+                Liga Suprema · Jornada 1
               </div>
             </div>
           </motion.article>

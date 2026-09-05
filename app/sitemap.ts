@@ -6,15 +6,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
-      lastModified: new Date("2026-08-25"),
+      lastModified: new Date("2026-09-05"),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
       url: `${baseUrl}/noticias`,
-      lastModified: new Date("2026-08-25"),
+      lastModified: new Date("2026-09-05"),
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/noticias/toros-debut-marineros-liga-suprema-2026`,
+      lastModified: new Date("2026-09-05"),
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/noticias/toros-de-alicante-grupo-liga-suprema-2k26`,
