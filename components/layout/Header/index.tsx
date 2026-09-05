@@ -64,7 +64,7 @@ export default function Header() {
 
           {/* BOTÓN ÚNETE */}
           <a
-            href="/#invitacion"
+            href="/unete"
             className="hidden rounded-full bg-[#30CED8] px-6 py-2 font-semibold text-black transition hover:scale-105 hover:bg-white sm:inline-flex"
           >
             ÚNETE
@@ -105,7 +105,7 @@ export default function Header() {
             ))}
 
             <a
-              href="/#invitacion"
+              href="/unete"
               onClick={() => setMenuOpen(false)}
               className="mt-6 inline-flex min-h-12 items-center justify-center rounded-full bg-[#30CED8] px-6 text-sm font-black uppercase tracking-[0.1em] text-black transition hover:bg-white"
             >
