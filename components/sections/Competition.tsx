@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Competition() {
   return (
@@ -165,10 +166,14 @@ export default function Competition() {
               <div className="flex items-center justify-center gap-5 text-center sm:gap-10">
 
                 <div className="flex-1">
-                  <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full border-2 border-black/20 bg-black/10">
-                    <span className="text-sm font-black">
-                      TOROS
-                    </span>
+                  <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center">
+                    <Image
+                    src="/logos/teams/toros-alicante.png"
+                    alt="Los Toros de Alicante"
+                    width={80}
+                    height={80}
+                    className="h-20 w-20 object-contain"
+                    />
                   </div>
 
                   <p className="text-lg font-black uppercase">
@@ -181,10 +186,14 @@ export default function Competition() {
                 </div>
 
                 <div className="flex-1">
-                  <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full border-2 border-black/20 bg-black/10">
-                    <span className="text-xs font-black">
-                      MARINEROS
-                    </span>
+                  <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center">
+                    <Image
+                    src="/logos/teams/marineros-benidorm.png"
+                    alt="Marineros"
+                    width={80}
+                    height={80}
+                    className="h-20 w-20 object-contain"
+                    />
                   </div>
 
                   <p className="text-lg font-black uppercase">
@@ -349,6 +358,120 @@ export default function Competition() {
           </div>
         </motion.div>
 
+                {/* ====================================================== */}
+        {/* PRÓXIMAS JORNADAS */}
+        {/* ====================================================== */}
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.7 }}
+          className="mt-6"
+        >
+          <div className="mb-5 flex items-end justify-between gap-4">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.25em] text-[#30CED8]">
+                PRÓXIMAS JORNADAS
+              </p>
+
+              <h3 className="mt-2 text-2xl font-black uppercase sm:text-3xl">
+                Liga Suprema · Grupo D
+              </h3>
+            </div>
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-2">
+
+            {/* GLADIADORES */}
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 sm:p-7">
+              <div className="flex items-center justify-between gap-5">
+
+                <div className="flex items-center gap-4">
+                  <Image
+                    src="/logos/teams/toros-alicante.png"
+                    alt="Los Toros de Alicante"
+                    width={64}
+                    height={64}
+                    className="h-16 w-16 object-contain"
+                  />
+
+                  <span className="text-sm font-black text-white/30">
+                    VS
+                  </span>
+
+                  <Image
+                    src="/logos/teams/gladiadores.png"
+                    alt="Gladiadores"
+                    width={64}
+                    height={64}
+                    className="h-16 w-16 object-contain"
+                  />
+                </div>
+
+                <div className="text-right">
+                  <p className="font-black uppercase">
+                    Gladiadores
+                  </p>
+
+                  <p className="mt-1 text-sm text-white/50">
+                    Dom. 13 septiembre · 14:00
+                  </p>
+
+                  <p className="mt-1 text-xs font-bold uppercase tracking-wider text-[#30CED8]">
+                    Rigas
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            {/* MONARCAS */}
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 sm:p-7">
+              <div className="flex items-center justify-between gap-5">
+
+                <div className="flex items-center gap-4">
+                  <Image
+                    src="/logos/teams/toros-alicante.png"
+                    alt="Los Toros de Alicante"
+                    width={64}
+                    height={64}
+                    className="h-16 w-16 object-contain"
+                  />
+
+                  <span className="text-sm font-black text-white/30">
+                    VS
+                  </span>
+
+                  <Image
+                    src="/logos/teams/monarcas.jpeg"
+                    alt="Monarcas"
+                    width={64}
+                    height={64}
+                    className="h-16 w-16 object-contain"
+                  />
+                </div>
+
+                <div className="text-right">
+                  <p className="font-black uppercase">
+                    Monarcas
+                  </p>
+
+                  <p className="mt-1 text-sm text-white/50">
+                    Dom. 27 septiembre · 11:30
+                  </p>
+
+                  <p className="mt-1 text-xs font-bold uppercase tracking-wider text-[#30CED8]">
+                    Murcia
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </motion.div>
+        
       </div>
     </section>
   );
