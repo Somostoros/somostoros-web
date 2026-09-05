@@ -4,6 +4,7 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 const navigation = [
   { label: "Inicio", href: "/#inicio" },
+  { label: "El Club", href: "/club" },
   { label: "Actualidad", href: "/#actualidad" },
   { label: "El Equipo", href: "/#equipo" },
   { label: "Competición", href: "/#competicion" },
@@ -12,6 +13,7 @@ const navigation = [
 ];
 
 const clubLinks = [
+  { label: "El Club", href: "/club" },
   { label: "Nuestra historia", href: "/#historia" },
   { label: "Plantilla", href: "/#equipo" },
   { label: "Formar un equipo", href: "/#formar-equipo" },
@@ -51,7 +53,7 @@ export default function Footer() {
               </p>
 
               <h2 className="mt-4 text-4xl font-black uppercase tracking-tight sm:text-5xl lg:text-6xl">
-                El softball nos une
+                El softbol nos une
               </h2>
 
               <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-black/65">
@@ -110,7 +112,7 @@ export default function Footer() {
               </Link>
 
               <p className="mt-7 max-w-sm text-sm leading-7 text-gray-500">
-                Los Toros de Alicante. Un equipo de softball nacido
+                Los Toros de Alicante. Un equipo de softbol nacido
                 de la pasión, la amistad y las ganas de hacer crecer
                 nuestro deporte.
               </p>
