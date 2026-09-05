@@ -5,6 +5,7 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 const navigation = [
   { label: "Inicio", href: "/#inicio" },
   { label: "El Club", href: "/club" },
+  { label: "Únete", href: "/unete" },
   { label: "Actualidad", href: "/#actualidad" },
   { label: "El Equipo", href: "/#equipo" },
   { label: "Competición", href: "/#competicion" },
@@ -14,6 +15,7 @@ const navigation = [
 
 const clubLinks = [
   { label: "El Club", href: "/club" },
+  { label: "Únete", href: "/unete" },
   { label: "Nuestra historia", href: "/#historia" },
   { label: "Plantilla", href: "/#equipo" },
   { label: "Formar un equipo", href: "/#formar-equipo" },

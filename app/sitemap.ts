@@ -17,6 +17,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/unete`,
+      lastModified: new Date("2026-09-05"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/noticias`,
       lastModified: new Date("2026-09-05"),
       changeFrequency: "weekly",
