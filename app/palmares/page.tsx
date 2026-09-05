@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Palmarés de Los Toros de Alicante | Títulos y campeonatos",
+  title: "Palmarés | Títulos y campeonatos",
 
   description:
     "Descubre el palmarés de Los Toros de Alicante, sus campeonatos federados, títulos, historia deportiva y principales logros desde la fundación del club en 2021.",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "/palmares",
     locale: "es_ES",
     siteName: "Los Toros de Alicante",
-    title: "Palmarés de Los Toros de Alicante | Títulos y campeonatos",
+    title: "Palmarés | Títulos y campeonatos",
     description:
       "Descubre los títulos, campeonatos federados, estrellas e historia deportiva de Los Toros de Alicante.",
   },

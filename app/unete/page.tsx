@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Únete a Los Toros de Alicante | Béisbol y softbol",
+  title: "Únete | Juega béisbol y softbol en Alicante",
   description:
     "¿Quieres jugar béisbol o softbol en Alicante? Únete a Los Toros de Alicante, conoce nuestro club y da el primer paso para formar parte del equipo.",
   alternates: {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     url: "/unete",
     locale: "es_ES",
     siteName: "Los Toros de Alicante",
-    title: "Únete a Los Toros de Alicante | Béisbol y softbol",
+    title: "Únete | Juega béisbol y softbol en Alicante",
     description:
       "Forma parte de Los Toros de Alicante. Béisbol, softbol, equipo, compromiso y pasión por el deporte en Alicante.",
   },

@@ -19,18 +19,18 @@ export const metadata: Metadata = {
   },
 };
 
-const clubSchema = {
+const clubPageSchema = {
   "@context": "https://schema.org",
-  "@type": "SportsOrganization",
-  "@id": "https://www.somostoros.com/#organization",
-  name: "Los Toros de Alicante",
-  url: "https://www.somostoros.com",
-  sport: ["Béisbol", "Softbol"],
-  foundingDate: "2021-04-19",
-  areaServed: {
-    "@type": "AdministrativeArea",
-    name: "Alicante",
+  "@type": "AboutPage",
+  "@id": "https://www.somostoros.com/club#webpage",
+  url: "https://www.somostoros.com/club",
+  name: "Club de béisbol y softbol en Alicante",
+  description:
+    "Conoce la historia, identidad, valores y trayectoria de Los Toros de Alicante.",
+  about: {
+    "@id": "https://www.somostoros.com/#organization",
   },
+  inLanguage: "es",
 };
 
 export default function ClubPage() {
@@ -39,7 +39,7 @@ export default function ClubPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(clubSchema),
+          __html: JSON.stringify(clubPageSchema),
         }}
       />
 

@@ -73,7 +73,7 @@ export default function NoticiasPage() {
 
   <div className="p-7">
     <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#30CED8]">
-      5 septiembre 2026
+      2 septiembre 2026
     </p>
 
     <h2 className="mt-3 text-2xl font-black leading-tight text-white">
